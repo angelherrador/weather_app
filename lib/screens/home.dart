@@ -25,13 +25,14 @@ class Home extends StatelessWidget {
                   children: meteo.dataseries
                     .map((e) => ForecastWidget(dataSerie: e, reference: meteo.initDateTime,))
                     .toList(),
-                 );
+                );
               } else if (snaphot.hasError) {
                 return Center(child: Text("Error getting fucking data: $Error"));
               } else {
                 return const Center(child: CircularProgressIndicator());
               }
             })
+
         // para mostrar los datos a partir de clicar un botón
         /*const Text('Wheather'),
       floatingActionButton: FloatingActionButton(
