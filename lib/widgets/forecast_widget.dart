@@ -42,9 +42,6 @@ class ForecastWidget extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
-        const Divider(
-            color: Colors.black
-        )
       ],
     );
   }
