@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import '../models/meteo.dart';
 
 class WeatherService {
-  static const double latitude = 38.0976033; //41.123401; //41.358889;
-  static const double longitude = -3.6517936; //1.2409893; //2.099167;
+  static const double latitude = 41.123401;//38.0976033; // //41.358889;
+  static const double longitude = 1.2409893;//-3.6517936; // //2.099167;
 
   Future<Meteo> fetchData() async {
     //esta url que nos da la predicción del tiempo está en https://7timer.info
